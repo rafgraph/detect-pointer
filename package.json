@@ -1,6 +1,6 @@
 {
   "name": "detect-pointer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "JavaScript wrapper for pointer and any-pointer media queries",
   "main": "lib/index.js",
   "scripts": {
