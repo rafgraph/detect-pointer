@@ -43,8 +43,8 @@ import detectPointer from 'detect-pointer';
 ## Using `detect-pointer`
 ```javascript
 // using the state
-detectPointer.fine === true; // primary input mechanism is an accurate pointing device (e.g. mouse, stylus)
-detectPointer.coarse === true; // primary input mechanism is a pointing device of limited accuracy (e.g. touchscreen, motion-detector)
+detectPointer.fine === true; // primary pointing device is accurate (e.g. mouse, stylus)
+detectPointer.coarse === true; // primary pointing device has limited accuracy (e.g. touch, motion)
 detectPointer.none === true; // primary input mechanism does not include a pointing device
 
 /*
