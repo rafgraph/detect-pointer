@@ -61,6 +61,22 @@ detectPointer.anyNone === true;
 // updating the state - most apps won't need to use this at all
 detectPointer.update();
 ```
+
+```javascript
+/*
+ * note that in the case of a legacy computer and browser, one that
+ * doesn't support detect-pointer's detection tests, the default state will be:
+ */
+const detectPointer = {
+  fine: undefined,
+  coarse: undefined,
+  none: undefined,
+  anyFine: undefined,
+  anyCoarse: undefined,
+  anyNone: undefined,
+}
+```
+
 Note that the `update()` function is run once at the time of import to set the object's initial state, and generally doesn't need to be run again. If it doesn't have access to the `window` or the browser doesn't support the `matchMedia()` function (all modern browser do), then the state will be `undefined` (`detect-pointer` will not throw an error). If `detect-pointer` doesn't have access to the `window` at the time of import, you will have to call the `update()` function manually at a later time to update its state.
 
 ## Part of the [`detect-it`][detectItRepo] family
