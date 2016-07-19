@@ -11,7 +11,7 @@ Note that `detect-pointer` is one of the micro state machines used by [`detect-i
 *For more information on the `pointer` and `any-pointer` media queries, please see the [W3C Media Queries Level 4 specification][w3cSpecLatest]. For information on browser compatibility, please see [Can I Use matchMedia][canIUseMatchMedia].*
 
 
-## `detectPointer` micro state machine
+### `detectPointer` micro state machine
 ```javascript
 const detectPointer = {
   // mutually exclusive (only one will be true)
@@ -29,18 +29,15 @@ const detectPointer = {
 }
 ```
 
-## Installing `detect-pointer`
+### Installing `detect-pointer`
 ```terminal
 $ npm install detect-pointer
 ```
 
-## Importing `detect-pointer`
+### Using `detect-pointer`
 ```javascript
 import detectPointer from 'detect-pointer';
 ```
-
-
-## Using `detect-pointer`
 ```javascript
 // using the state
 detectPointer.fine === true; // primary pointing device is accurate (e.g. mouse, stylus)
@@ -79,7 +76,7 @@ const detectPointer = {
 
 Note that the `update()` function is run once at the time of import to set the object's initial state, and generally doesn't need to be run again. If it doesn't have access to the `window` or the browser doesn't support the `matchMedia()` function (all modern browser do), then the state will be `undefined` (`detect-pointer` will not throw an error). If `detect-pointer` doesn't have access to the `window` at the time of import, you will have to call the `update()` function manually at a later time to update its state.
 
-## Part of the [`detect-it`][detectItRepo] family
+### Part of the [`detect-it`][detectItRepo] family
 - [`detect-it`][detectItRepo]
   - [`detect-hover`][detectHoverRepo]
   - **`detect-pointer`**
