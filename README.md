@@ -2,7 +2,7 @@
 
 JavaScript wrapper for `pointer` and `any-pointer` media queries.
 
-[Live detection test][liveDetectionTest]
+[Live detection test][liveDetectionTest] &#8212; [view on npm][onNpm]
 
 Exports a reference to a singleton object (a micro state machine with an update function) with its state set to the results of the `pointer` and `any-pointer` media queries, as well as an `update()` function which re-runs the tests and updates the object's state.
 
@@ -86,6 +86,7 @@ Note that the `update()` function is run once at the time of import to set the o
 
 <!-- links -->
 [liveDetectionTest]: http://detect-it.rafrex.com/#detect-pointer
+[onNpm]: https://www.npmjs.com/package/detect-pointer
 [w3cSpecLatest]: https://www.w3.org/TR/mediaqueries-4/#pointer
 [canIUseMatchMedia]: http://caniuse.com/#feat=matchmedia
 [detectItRepo]: https://github.com/rafrex/detect-it
