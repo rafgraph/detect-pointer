@@ -16,9 +16,10 @@
     "url": "git+https://github.com/rafrex/detect-pointer.git"
   },
   "keywords": [
-    "media query",
+    "detect",
     "pointer",
-    "any-pointer"
+    "any-pointer",
+    "media query"
   ],
   "author": "Rafael Pedicini <code@rafrex.com>",
   "license": "MIT",
