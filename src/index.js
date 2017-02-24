@@ -1,6 +1,6 @@
 const detectPointer = {
   update() {
-    if (typeof window !== 'undefined' && typeof window.matchMedia === 'function') {
+    if (typeof window === 'object' && typeof window.matchMedia === 'function') {
       detectPointer.fine = window.matchMedia('(pointer: fine)').matches;
       detectPointer.coarse = window.matchMedia('(pointer: coarse)').matches;
       detectPointer.none = window.matchMedia('(pointer: none)').matches;
